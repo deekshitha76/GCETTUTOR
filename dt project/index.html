@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCETUTOR - Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to GCETUTOR</h1>
+    <div id="loginSection">
+      <h2>Login</h2>
+      <form onsubmit="login(); return false;">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div id="dashboard" style="display: none;">
+      <h2>Dashboard</h2>
+      <p>Welcome, <span id="loggedInUser"></span>!</p>
+      <button onclick="showYearPage()">Year</button>
+      <button onclick="showSemesterPage()">Semester</button>
+      <button onclick="showSubjectPage()">Subject</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div> 
+  <div>
+
+    
+        <a href="year.html">year</a>
+    
+
+        <a href="semester.html">semister</a>
+    
+  
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
